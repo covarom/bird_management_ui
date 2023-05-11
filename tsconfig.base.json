@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bird-management-ui/auth/login": ["libs/auth/login/src/index.ts"],
+      "@bird-management-ui/auth/register": ["libs/auth/register/src/index.ts"],
+      "@bird-management-ui/auth/reset-password": [
+        "libs/auth/reset-password/src/index.ts"
+      ],
+      "@bird-management-ui/auth/shared": ["libs/auth/shared/src/index.ts"],
+      "@bird-management-ui/home": ["libs/home/src/index.ts"],
+      "@bird-management-ui/shared/directives": [
+        "libs/shared/directives/src/index.ts"
+      ],
+      "@bird-management-ui/shared/pipes": ["libs/shared/pipes/src/index.ts"],
+      "@bird-management-ui/shared/ui": ["libs/shared/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
