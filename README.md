@@ -1,6 +1,46 @@
-# ChatProjectUi
+# BirdManagementUI
+
+
+### Work with that project
+To create more libs into libs/, use: 
+
+npx nx generate @nrwl/angular:lib ${'name of lib'} --routing --lazy  --directory=${'name of directory which lib will be into (optional)'}
+
+To create components into libs, use:
+
+npx nx g @nx/angular:component --name=${'name of component'}
+
 
 This project was generated using [Nx](https://nx.dev).
+
+
+### Structure
+```
+.
+└── root
+    ├── apps
+    │   └── bird-management-ui
+    └── libs        
+            ├── auth - folder contain libs relate to auth
+            │   ├── login (angular:lib) - contain all elements of login modules
+            │   └── register (angular:lib) - contain all elements of register modules   
+            │   └── register (angular:lib) - contain all elements of register modules    
+            │   └── reset-password (angular:lib) - contain all elements of reset-password modules    
+            │   └── services (services folder) - contain services that use in auth   
+            │   └── shared (angular:lib) - contain all elements which can be shared in auth/ (ui/pipes/directives)
+            │   └── data-access (angular:lib, service, state management) - (Optional lib depending on the case) that lib contain models, store
+            ├── home - (angular:lib) - contain all elements of home modules
+            │   ├── footer (angular:component) - element in home modules
+            │   ├── header (angular:component) - element in home modules
+            │   ├── layout (angular:component) - element in home modules
+            │   └── data-access (angular:lib, service, state management) - (Optional lib depending on the case) that lib contain models, store
+            ├── shared - folder contain (ui/pipes/directives) can be shared across libs
+                ├── data-access (angular:lib, API call, Service or State management to share across the Client app)
+                ├── ui (dir)
+                ├── pipes (dir)
+                ├── directives (dir)
+                └── utils (angular:lib, usually shared Guards, Interceptors, Validators...)       
+```
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
