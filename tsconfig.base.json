@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bird-management-ui/auth/data-access": [
+        "libs/auth/data-access/src/index.ts"
+      ],
       "@bird-management-ui/auth/login": ["libs/auth/login/src/index.ts"],
       "@bird-management-ui/auth/register": ["libs/auth/register/src/index.ts"],
       "@bird-management-ui/auth/reset-password": [
